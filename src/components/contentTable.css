@@ -1,0 +1,116 @@
+.contentTable{
+    list-style: none;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: inset 0 0 15px #000;
+}
+/* media querie for tablet */
+@media screen and (max-width: 790px){
+    .contentTable{
+        width: 720px;
+        margin: 0 auto;
+    }
+}
+.tableItem{
+    display:  table;
+    width: 100%;
+    position: relative;
+    color: sandybrown;
+    font-size: 14px;
+    border: 2px solid hsla(80,50%,40%,1);
+    border-top: none;
+    background-color: hsla(0, 10%, 30%,1);
+    text-shadow: 0 0 3px #000;
+}
+
+.tableItem:first-child{    
+    border-top: 2px solid hsla(80,50%,40%,1);
+}
+.tableController__item{
+    position: relative;
+    cursor: pointer;
+}
+.tableController__item:hover::after{
+    top: 0px;
+}
+.tableController__item::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -2px;
+    left: 0;
+    border: 7px solid transparent;
+    border-top-color: #779933;
+    pointer-events: none;
+}
+.tableItem__index,
+.tableItem__brand,
+.tableItem__year,
+.tableItem__weight,
+.tableItem__stock,
+.tableItem__link,
+.tableItem__rating{
+    overflow: hidden;
+    padding: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 2px solid hsla(80,50%,40%,1);
+}
+
+.tableItem__index{
+    font-weight: 700;
+    width: 60px;
+    text-align: center;    
+}
+.tableItem__brand{
+    font-weight: 700;
+    width: auto;
+}
+.tableItem__year{
+    width: 70px;
+    text-align: center;
+}
+.tableItem__weight{
+    width: 120px;
+    text-align: center;
+
+}
+.tableItem__stock{
+    width: 120px;
+    text-align: center;
+    font-weight: 300;
+}
+.tableItem__stock_full{
+    color: #09b909;
+}
+.tableItem__stock_empty{
+    color: #827c4f;
+}
+.tableItem__link{
+    width: 120px;
+    text-align: center;
+}
+.tableItem__link a{
+    font-weight: 700;
+    color: greenyellow;
+    text-decoration: none;
+}
+.tableItem__link a{
+    text-decoration: underline;
+}
+.tableItem__rating{
+    width: 70px;
+    text-align: center;
+    font-weight: 700;
+    border-right: none;
+}
+.tableItem__rating_plus{
+    color: #6969fd;
+}
+.tableItem__rating_minus{
+    color: #f96e6e;
+}

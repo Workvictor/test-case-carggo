@@ -1,0 +1,29 @@
+.App *{
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  background-color: #222;
+  padding: 0 0 25px 0;
+  overflow: hidden;
+  width: 100%;
+  color: lawngreen;
+}
+/* media querie for tablet */
+@media screen and (max-width: 720px){
+    .App{
+        width: 720px;
+        margin: 0 auto;
+    }
+}
+.App-header {
+  background-color: #444;
+  padding: 20px;
+  color: orange;
+  margin-bottom: 25px;
+}
+
+.App-intro {
+  font-size: large;
+}
